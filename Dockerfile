@@ -1,7 +1,7 @@
 FROM jboss/keycloak:4.1.0.Final
 MAINTAINER 6congyao@gmail.com
  
-ADD op-realm.json /opt/jboss/keycloak/
+ADD realm-op.json /opt/jboss/keycloak/
 
 ENTRYPOINT [ "/opt/jboss/docker-entrypoint.sh" ]
 
