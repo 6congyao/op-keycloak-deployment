@@ -7,4 +7,4 @@ ENTRYPOINT [ "/opt/jboss/docker-entrypoint.sh" ]
 
 EXPOSE 8080
 
-CMD ["-b", "0.0.0.0", "-Dkeycloak.import=/opt/jboss/keycloak/op-realm.json"]
+CMD ["-b", "0.0.0.0", "-Dkeycloak.import=/opt/jboss/keycloak/realm-op.json"]
