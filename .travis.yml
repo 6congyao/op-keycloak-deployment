@@ -1,0 +1,12 @@
+sudo: required
+services:
+- docker
+script:
+- docker build --rm -t 6congyao/op-keycloak .
+after_success:
+- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+- if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+  docker push 6congyao/op-keycloak;
+  else echo $TRAVIS_BRANCH; docker tag 6congyao/op-keycloak 6congyao/op-keycloak:$TRAVIS_BRANCH;
+  docker push 6congyao/op-keycloak:$TRAVIS_BRANCH;
+  fi
