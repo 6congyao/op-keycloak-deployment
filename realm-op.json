@@ -217,7 +217,7 @@
         "surrogateAuthRequired": false,
         "enabled": true,
         "clientAuthenticatorType": "client-secret",
-        "secret": "**********",
+        "secret": "fb4ac10d-c940-4fbb-a371-0c9fce116215",
         "redirectUris": [],
         "webOrigins": [],
         "notBefore": 0,

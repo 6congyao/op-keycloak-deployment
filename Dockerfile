@@ -1,5 +1,5 @@
 FROM jboss/keycloak:4.1.0.Final
-MAINTAINER 6congyao@gmail.com
+LABEL MAINTAINER "6congyao@gmail.com"
  
 ADD realm-op.json /opt/jboss/keycloak/
 
